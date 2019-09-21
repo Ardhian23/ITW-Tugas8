@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>L8c_173040145</title>
+</head>
+<body>
+<script type="text/javascript">
+	var pilihanUser = prompt("Apakah kamu pilih gajah, orang, atau semut?");
+
+	var pilihan_Computer = Math.random();
+
+	if (pilihan_Computer < 0.34){
+		pilihan_Computer = "gajah";
+	} else if (pilihan_Computer <= 0.67) {
+		pilihan_Computer="orang";
+	}else{
+		pilihan_Computer = "semut";
+	}
+
+	alert("Pilihan Komputer = "+pilihan_Computer);
+	if(pilihan_Computer == pilihanUser){
+		alert("Seri");
+	}else if (pilihan_Computer == "gajah" && pilihanUser == "semut") {
+		alert(" Kamu Menang");
+	}else if (pilihan_Computer == "gajah" && pilihanUser == "orang"){
+		alert("Kamu Kalah");
+	}else if (pilihan_Computer == "orang" && pilihanUser == "semut"){
+		alert("Kamu Kalah");
+	}else if (pilihan_Computer == "orang" && pilihanUser == "gajah"){
+		alert("Kamu Menang");
+	}else if (pilihan_Computer == "semut" && pilihanUser == "orang"){
+		alert("Kamu Menang");
+	}else if (pilihan_Computer == "semut" && pilihanUser == "gajah"){
+		alert("Kamu Kalah");
+	}else{
+		alert("Masukan Pilihan Anda");
+	};
+</script>
+</body>
+</html>
